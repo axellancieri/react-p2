@@ -10,10 +10,7 @@ export default function Player({ name, symbol }) {
     let isPlayerGaming = <span className="player-name">{name}</span>;
 
     if (isEditing) {
-        isPlayerGaming = <input />;
-    } else 
-    {
-        <span className="player-name">{name}</span>;
+        isPlayerGaming = <input type='text' required/>;
     }
 
     return (
